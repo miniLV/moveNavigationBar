@@ -8,6 +8,7 @@
 
 #import "ComplexRootViewController.h"
 #import "HZCarInsOrderConst.h"
+#import <MJRefresh/MJRefresh.h>
 @interface ComplexRootViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 -(showType)type;
@@ -50,10 +51,8 @@
 
     
     //下拉刷新
-//    tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadDatas)];
-//    
-//    _tableView = tableView;
-//    
+    tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadDatas)];
+
 //    //监听tableView 的滚动方向 - 设置导航条的隐藏or显示
     [tableView addObserver:self forKeyPath:NSStringFromSelector(@selector(contentOffset)) options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
     
@@ -79,6 +78,11 @@
             break;
     }
     
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+       
+        [_tableView.mj_header endRefreshing];
+    });
+
     [_tableView reloadData];
     
 }
@@ -124,9 +128,9 @@
         [UIView animateWithDuration:0.25 animations:^{
             
             //tableView要变高
-//            CGRect tempTableViewFrame = _tableView.frame;
-//            tempTableViewFrame.size.height += navigationBarH;
-//            _tableView.frame = tempTableViewFrame;
+            CGRect tempTableViewFrame = _tableView.frame;
+            tempTableViewFrame.size.height += navigationBarH;
+            _tableView.frame = tempTableViewFrame;
             
         }];
         
