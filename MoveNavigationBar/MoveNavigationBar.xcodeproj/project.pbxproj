@@ -14,6 +14,15 @@
 		146A3CF01FB18ED6007A5B33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 146A3CEF1FB18ED6007A5B33 /* Assets.xcassets */; };
 		146A3CF31FB18ED6007A5B33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146A3CF11FB18ED6007A5B33 /* LaunchScreen.storyboard */; };
 		146A3CFC1FB18EEF007A5B33 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A3CFB1FB18EEF007A5B33 /* DemoViewController.m */; };
+		146A3D001FB29D44007A5B33 /* ComplexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A3CFF1FB29D44007A5B33 /* ComplexViewController.m */; };
+		146A3D041FB29D85007A5B33 /* ComplexRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A3D031FB29D85007A5B33 /* ComplexRootViewController.m */; };
+		146A3D071FB29DB9007A5B33 /* ChildrenOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A3D061FB29DB9007A5B33 /* ChildrenOneViewController.m */; };
+		146A3D0A1FB29DC6007A5B33 /* ChildrenTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A3D091FB29DC6007A5B33 /* ChildrenTwoViewController.m */; };
+		146A3D0D1FB29DD3007A5B33 /* ChildrenThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A3D0C1FB29DD3007A5B33 /* ChildrenThreeViewController.m */; };
+		146A3D101FB29F1D007A5B33 /* HZCarInsOrderConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A3D0F1FB29F1D007A5B33 /* HZCarInsOrderConst.m */; };
+		146A3D291FB2A661007A5B33 /* NSAttributedString+HZsetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A3D211FB2A661007A5B33 /* NSAttributedString+HZsetColor.m */; };
+		146A3D2B1FB2A661007A5B33 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A3D251FB2A661007A5B33 /* UIColor+Hex.m */; };
+		146A3D2C1FB2A661007A5B33 /* HZIasTableTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A3D281FB2A661007A5B33 /* HZIasTableTitleView.m */; };
 		4BE47451F985FBA4A084A0CC /* libPods-MoveNavigationBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4376733202C5CE882996E1C0 /* libPods-MoveNavigationBar.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +39,25 @@
 		146A3CF41FB18ED6007A5B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		146A3CFA1FB18EEF007A5B33 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		146A3CFB1FB18EEF007A5B33 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		146A3CFE1FB29D44007A5B33 /* ComplexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplexViewController.h; sourceTree = "<group>"; };
+		146A3CFF1FB29D44007A5B33 /* ComplexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplexViewController.m; sourceTree = "<group>"; };
+		146A3D021FB29D85007A5B33 /* ComplexRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplexRootViewController.h; sourceTree = "<group>"; };
+		146A3D031FB29D85007A5B33 /* ComplexRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplexRootViewController.m; sourceTree = "<group>"; };
+		146A3D051FB29DB9007A5B33 /* ChildrenOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildrenOneViewController.h; sourceTree = "<group>"; };
+		146A3D061FB29DB9007A5B33 /* ChildrenOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildrenOneViewController.m; sourceTree = "<group>"; };
+		146A3D081FB29DC6007A5B33 /* ChildrenTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildrenTwoViewController.h; sourceTree = "<group>"; };
+		146A3D091FB29DC6007A5B33 /* ChildrenTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildrenTwoViewController.m; sourceTree = "<group>"; };
+		146A3D0B1FB29DD3007A5B33 /* ChildrenThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildrenThreeViewController.h; sourceTree = "<group>"; };
+		146A3D0C1FB29DD3007A5B33 /* ChildrenThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildrenThreeViewController.m; sourceTree = "<group>"; };
+		146A3D0E1FB29F1D007A5B33 /* HZCarInsOrderConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZCarInsOrderConst.h; sourceTree = "<group>"; };
+		146A3D0F1FB29F1D007A5B33 /* HZCarInsOrderConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZCarInsOrderConst.m; sourceTree = "<group>"; };
+		146A3D1E1FB2A3EB007A5B33 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		146A3D201FB2A661007A5B33 /* NSAttributedString+HZsetColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+HZsetColor.h"; sourceTree = "<group>"; };
+		146A3D211FB2A661007A5B33 /* NSAttributedString+HZsetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+HZsetColor.m"; sourceTree = "<group>"; };
+		146A3D241FB2A661007A5B33 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		146A3D251FB2A661007A5B33 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		146A3D271FB2A661007A5B33 /* HZIasTableTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZIasTableTitleView.h; sourceTree = "<group>"; };
+		146A3D281FB2A661007A5B33 /* HZIasTableTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZIasTableTitleView.m; sourceTree = "<group>"; };
 		4376733202C5CE882996E1C0 /* libPods-MoveNavigationBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoveNavigationBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90E8302F983ADE409C5148A /* Pods-MoveNavigationBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoveNavigationBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoveNavigationBar/Pods-MoveNavigationBar.release.xcconfig"; sourceTree = "<group>"; };
 		FDD7F854476B63FBE77EEF8A /* Pods-MoveNavigationBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoveNavigationBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoveNavigationBar/Pods-MoveNavigationBar.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +96,7 @@
 		146A3CE21FB18ED6007A5B33 /* MoveNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
+				146A3CFD1FB29CFA007A5B33 /* 跨控制器VC */,
 				146A3CE61FB18ED6007A5B33 /* AppDelegate.h */,
 				146A3CE71FB18ED6007A5B33 /* AppDelegate.m */,
 				146A3CE91FB18ED6007A5B33 /* ViewController.h */,
@@ -79,6 +108,7 @@
 				146A3CE31FB18ED6007A5B33 /* Supporting Files */,
 				146A3CFA1FB18EEF007A5B33 /* DemoViewController.h */,
 				146A3CFB1FB18EEF007A5B33 /* DemoViewController.m */,
+				146A3D1E1FB2A3EB007A5B33 /* PrefixHeader.pch */,
 			);
 			path = MoveNavigationBar;
 			sourceTree = "<group>";
@@ -89,6 +119,55 @@
 				146A3CE41FB18ED6007A5B33 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		146A3CFD1FB29CFA007A5B33 /* 跨控制器VC */ = {
+			isa = PBXGroup;
+			children = (
+				146A3D1F1FB2A661007A5B33 /* tools */,
+				146A3D261FB2A661007A5B33 /* View */,
+				146A3D0E1FB29F1D007A5B33 /* HZCarInsOrderConst.h */,
+				146A3D0F1FB29F1D007A5B33 /* HZCarInsOrderConst.m */,
+				146A3D011FB29D6E007A5B33 /* childrensVC */,
+				146A3CFE1FB29D44007A5B33 /* ComplexViewController.h */,
+				146A3CFF1FB29D44007A5B33 /* ComplexViewController.m */,
+			);
+			path = "跨控制器VC";
+			sourceTree = "<group>";
+		};
+		146A3D011FB29D6E007A5B33 /* childrensVC */ = {
+			isa = PBXGroup;
+			children = (
+				146A3D021FB29D85007A5B33 /* ComplexRootViewController.h */,
+				146A3D031FB29D85007A5B33 /* ComplexRootViewController.m */,
+				146A3D051FB29DB9007A5B33 /* ChildrenOneViewController.h */,
+				146A3D061FB29DB9007A5B33 /* ChildrenOneViewController.m */,
+				146A3D081FB29DC6007A5B33 /* ChildrenTwoViewController.h */,
+				146A3D091FB29DC6007A5B33 /* ChildrenTwoViewController.m */,
+				146A3D0B1FB29DD3007A5B33 /* ChildrenThreeViewController.h */,
+				146A3D0C1FB29DD3007A5B33 /* ChildrenThreeViewController.m */,
+			);
+			path = childrensVC;
+			sourceTree = "<group>";
+		};
+		146A3D1F1FB2A661007A5B33 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				146A3D201FB2A661007A5B33 /* NSAttributedString+HZsetColor.h */,
+				146A3D211FB2A661007A5B33 /* NSAttributedString+HZsetColor.m */,
+				146A3D241FB2A661007A5B33 /* UIColor+Hex.h */,
+				146A3D251FB2A661007A5B33 /* UIColor+Hex.m */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		146A3D261FB2A661007A5B33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				146A3D271FB2A661007A5B33 /* HZIasTableTitleView.h */,
+				146A3D281FB2A661007A5B33 /* HZIasTableTitleView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		229C48EFE6B09089676F8E13 /* Frameworks */ = {
@@ -231,10 +310,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				146A3D2C1FB2A661007A5B33 /* HZIasTableTitleView.m in Sources */,
+				146A3D101FB29F1D007A5B33 /* HZCarInsOrderConst.m in Sources */,
+				146A3D0D1FB29DD3007A5B33 /* ChildrenThreeViewController.m in Sources */,
+				146A3D0A1FB29DC6007A5B33 /* ChildrenTwoViewController.m in Sources */,
 				146A3CEB1FB18ED6007A5B33 /* ViewController.m in Sources */,
+				146A3D041FB29D85007A5B33 /* ComplexRootViewController.m in Sources */,
 				146A3CE81FB18ED6007A5B33 /* AppDelegate.m in Sources */,
+				146A3D001FB29D44007A5B33 /* ComplexViewController.m in Sources */,
 				146A3CE51FB18ED6007A5B33 /* main.m in Sources */,
+				146A3D071FB29DB9007A5B33 /* ChildrenOneViewController.m in Sources */,
+				146A3D291FB2A661007A5B33 /* NSAttributedString+HZsetColor.m in Sources */,
 				146A3CFC1FB18EEF007A5B33 /* DemoViewController.m in Sources */,
+				146A3D2B1FB2A661007A5B33 /* UIColor+Hex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +379,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MoveNavigationBar/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -338,6 +428,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MoveNavigationBar/PrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -397,6 +489,7 @@
 				146A3CF91FB18ED6007A5B33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

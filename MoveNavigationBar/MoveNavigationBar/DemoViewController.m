@@ -8,7 +8,7 @@
 
 #import "DemoViewController.h"
 #import <Masonry.h>
-@interface DemoViewController ()<UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate>
+@interface DemoViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @end
 
@@ -23,9 +23,9 @@
     UIView *_showView;
 }
 
-CGFloat toolBarH = 20;
-CGFloat navigationBarH = 44;
-CGFloat showViewH = 50;
+static CGFloat toolBarH = 20;
+static CGFloat navigationBarH = 44;
+static CGFloat showViewH = 50;
 
 #pragma mark - life cycle
 - (void)viewDidLoad {
@@ -53,6 +53,9 @@ CGFloat showViewH = 50;
     [super viewWillDisappear:animated];
     
     [self.navigationController setNavigationBarHidden:NO];
+    
+    //移除kvo
+    [_tableView removeObserver:self forKeyPath:NSStringFromSelector(@selector(contentOffset))];
 }
 
 - (void)basicSetting{
@@ -81,8 +84,8 @@ CGFloat showViewH = 50;
     //4.tableView
     UITableView *tableView = [[UITableView alloc]init];
     CGFloat tableViewY = navigationBarH + toolBarH + showViewH;
-    CGFloat tableViewH = 667 - tableViewY;
-    tableView.frame = CGRectMake(0, tableViewY, 375, tableViewH);
+    CGFloat tableViewH = ScreenH - tableViewY;
+    tableView.frame = CGRectMake(0, tableViewY, ScreenW, tableViewH);
     tableView.delegate = self;
     tableView.dataSource = self;
     
@@ -99,7 +102,7 @@ CGFloat showViewH = 50;
     //2.导航条View
     UIView *navigationView = [[UIView alloc]init];
     navigationView.backgroundColor = [UIColor orangeColor];
-    navigationView.frame = CGRectMake(0, toolBarH, 375, navigationBarH);
+    navigationView.frame = CGRectMake(0, toolBarH, ScreenW, navigationBarH);
     
     //2.1title
     UILabel *label = [[UILabel alloc]init];
@@ -127,7 +130,7 @@ CGFloat showViewH = 50;
 
     //1.整个topView
     UIView *topView = [[UIView alloc]init];
-    topView.frame = CGRectMake(0, 0, 375, toolBarH);
+    topView.frame = CGRectMake(0, 0, ScreenW, toolBarH);
     topView.backgroundColor = [UIColor lightGrayColor];
     
     
@@ -138,7 +141,7 @@ CGFloat showViewH = 50;
 - (UIView *)createShowView{
 
     UIView *showView = [[UIView alloc]init];
-    showView.frame = CGRectMake(0, navigationBarH + toolBarH, 375, showViewH);
+    showView.frame = CGRectMake(0, navigationBarH + toolBarH, ScreenW, showViewH);
     showView.backgroundColor = [UIColor darkGrayColor];
     
     return  showView;
@@ -170,12 +173,11 @@ CGFloat showViewH = 50;
 #pragma mark - <KVO>
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
 
-    CGFloat oldOffsetY          = [change[NSKeyValueChangeOldKey] CGPointValue].y;
-    CGFloat newOffsetY          = [change[NSKeyValueChangeNewKey] CGPointValue].y;
-    CGFloat deltaY              = newOffsetY - oldOffsetY;
+    CGFloat oldOffsetY = [change[NSKeyValueChangeOldKey] CGPointValue].y;
+    CGFloat newOffsetY = [change[NSKeyValueChangeNewKey] CGPointValue].y;
+    CGFloat deltaY = newOffsetY - oldOffsetY;
     
-    NSLog(@"deltaY = %f",deltaY);
-    
+
     if(deltaY >= 15) {  //向上滚动
         NSLog(@"向上滚动 - hidden");
         if (_navigationView.hidden == YES) {

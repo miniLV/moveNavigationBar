@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "DemoViewController.h"
-
+#import "ComplexViewController.h"
 @interface ViewController ()
 
 @end
@@ -21,13 +21,25 @@
 }
 
 
-
-- (IBAction)clickPushBtn:(id)sender {
+#pragma mark - IBButton 点击方法
+- (IBAction)clickSingleVCPushBtn:(id)sender {
     
     DemoViewController *demoVC = [[DemoViewController alloc]init];
 
     [self.navigationController pushViewController:demoVC animated:YES];
     
 }
+
+
+- (IBAction)clickComplexVCPushBtn:(id)sender {
+    
+    ComplexViewController *complexVC = [[ComplexViewController alloc]init];
+    [self.navigationController pushViewController:complexVC animated:YES];
+    
+}
+
+- (IBAction)clickMJRefreshVCBtn:(id)sender {
+}
+
 
 @end

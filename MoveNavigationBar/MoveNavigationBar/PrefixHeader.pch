@@ -1,0 +1,40 @@
+//
+//  PrefixHeader.pch
+//  MoveNavigationBar
+//
+//  Created by Lyh on 2017/11/8.
+//  Copyright © 2017年 xmhccf. All rights reserved.
+//
+
+
+#ifdef DEBUG
+//调试环境才会打印
+#define MNLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+//发布环境不打印
+#define MNLog(...)
+#endif
+
+#import "UIColor+Hex.h"
+
+#define DefaultNaviHeight 64
+//屏幕宽高
+#define ScreenH  [[UIScreen mainScreen] bounds].size.height
+#define ScreenW  [[UIScreen mainScreen] bounds].size.width
+
+///默认间距 - 15
+#define DefaultMargin 15
+
+///常用颜色
+#define HZ_1B1A1FColor [UIColor colorWithHexString:@"1B1A1F"]
+#define HZ_ddddddColor [UIColor colorWithHexString:@"dddddd"]
+#define HZ_888888Color [UIColor colorWithHexString:@"888888"]
+#define HZ_27CD91Color [UIColor colorWithHexString:@"27CD91"]
+#define HZ_ddddddColor [UIColor colorWithHexString:@"dddddd"]
+#define HZ_FFE8E8Color [UIColor colorWithHexString:@"FFE8E8"]
+#define HZ_383838Color [UIColor colorWithHexString:@"383838"]
+#define HZ_ff5c5cColor [UIColor colorWithHexString:@"ff5c5c"]
+
+///常用字体
+#define HZ_14FontSize [UIFont systemFontOfSize:14]
+#define HZ_10FontSize [UIFont systemFontOfSize:10]

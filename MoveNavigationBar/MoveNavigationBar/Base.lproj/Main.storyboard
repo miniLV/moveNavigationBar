@@ -38,25 +38,59 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jec-ed-hDj">
-                                <rect key="frame" x="152.5" y="298.5" width="70" height="70"/>
+                                <rect key="frame" x="112.5" y="164" width="150" height="50"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="ftU-s4-TeO"/>
-                                    <constraint firstAttribute="height" constant="70" id="nBb-jc-nZd"/>
+                                    <constraint firstAttribute="height" constant="50" id="55w-gw-AnG"/>
+                                    <constraint firstAttribute="width" constant="150" id="VqS-UX-zbI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="push">
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="单控制器导航条移动">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="clickPushBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aqk-aA-nev"/>
+                                    <action selector="clickSingleVCPushBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2PY-7T-dAG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDp-Hz-LFl">
+                                <rect key="frame" x="87.5" y="294" width="200" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Uc6-BE-vQ8"/>
+                                    <constraint firstAttribute="height" constant="50" id="iih-OE-dCd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="跨控制器控制导航条移动">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickComplexVCPushBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RJJ-PZ-syV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3B-Wr-uMS">
+                                <rect key="frame" x="112.5" y="424" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GVO-zN-mII"/>
+                                    <constraint firstAttribute="width" constant="150" id="o5z-AQ-xCB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="添加下拉刷新功能">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickMJRefreshVCBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cce-Ie-0QE"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jec-ed-hDj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ZN-4H-NdY"/>
-                            <constraint firstItem="jec-ed-hDj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wGH-Ov-Ibv"/>
+                            <constraint firstItem="bDp-Hz-LFl" firstAttribute="top" secondItem="jec-ed-hDj" secondAttribute="bottom" constant="80" id="6Y8-2A-UOj"/>
+                            <constraint firstItem="bDp-Hz-LFl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AYS-3N-Tpe"/>
+                            <constraint firstItem="y3B-Wr-uMS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DU4-qK-97O"/>
+                            <constraint firstItem="jec-ed-hDj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h28-Nn-ghd"/>
+                            <constraint firstItem="y3B-Wr-uMS" firstAttribute="top" secondItem="bDp-Hz-LFl" secondAttribute="bottom" constant="80" id="hUu-wU-uqw"/>
+                            <constraint firstItem="jec-ed-hDj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="omW-Hm-beq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="exr-jA-eIh"/>
