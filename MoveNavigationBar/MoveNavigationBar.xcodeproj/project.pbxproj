@@ -20,7 +20,6 @@
 		146A3D0A1FB29DC6007A5B33 /* ChildrenTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A3D091FB29DC6007A5B33 /* ChildrenTwoViewController.m */; };
 		146A3D0D1FB29DD3007A5B33 /* ChildrenThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A3D0C1FB29DD3007A5B33 /* ChildrenThreeViewController.m */; };
 		146A3D101FB29F1D007A5B33 /* HZCarInsOrderConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A3D0F1FB29F1D007A5B33 /* HZCarInsOrderConst.m */; };
-		146A3D291FB2A661007A5B33 /* NSAttributedString+HZsetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A3D211FB2A661007A5B33 /* NSAttributedString+HZsetColor.m */; };
 		146A3D2B1FB2A661007A5B33 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A3D251FB2A661007A5B33 /* UIColor+Hex.m */; };
 		146A3D2C1FB2A661007A5B33 /* HZIasTableTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A3D281FB2A661007A5B33 /* HZIasTableTitleView.m */; };
 		4BE47451F985FBA4A084A0CC /* libPods-MoveNavigationBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4376733202C5CE882996E1C0 /* libPods-MoveNavigationBar.a */; };
@@ -52,8 +51,6 @@
 		146A3D0E1FB29F1D007A5B33 /* HZCarInsOrderConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZCarInsOrderConst.h; sourceTree = "<group>"; };
 		146A3D0F1FB29F1D007A5B33 /* HZCarInsOrderConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZCarInsOrderConst.m; sourceTree = "<group>"; };
 		146A3D1E1FB2A3EB007A5B33 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		146A3D201FB2A661007A5B33 /* NSAttributedString+HZsetColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+HZsetColor.h"; sourceTree = "<group>"; };
-		146A3D211FB2A661007A5B33 /* NSAttributedString+HZsetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+HZsetColor.m"; sourceTree = "<group>"; };
 		146A3D241FB2A661007A5B33 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		146A3D251FB2A661007A5B33 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		146A3D271FB2A661007A5B33 /* HZIasTableTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZIasTableTitleView.h; sourceTree = "<group>"; };
@@ -153,8 +150,6 @@
 		146A3D1F1FB2A661007A5B33 /* tools */ = {
 			isa = PBXGroup;
 			children = (
-				146A3D201FB2A661007A5B33 /* NSAttributedString+HZsetColor.h */,
-				146A3D211FB2A661007A5B33 /* NSAttributedString+HZsetColor.m */,
 				146A3D241FB2A661007A5B33 /* UIColor+Hex.h */,
 				146A3D251FB2A661007A5B33 /* UIColor+Hex.m */,
 			);
@@ -320,7 +315,6 @@
 				146A3D001FB29D44007A5B33 /* ComplexViewController.m in Sources */,
 				146A3CE51FB18ED6007A5B33 /* main.m in Sources */,
 				146A3D071FB29DB9007A5B33 /* ChildrenOneViewController.m in Sources */,
-				146A3D291FB2A661007A5B33 /* NSAttributedString+HZsetColor.m in Sources */,
 				146A3CFC1FB18EEF007A5B33 /* DemoViewController.m in Sources */,
 				146A3D2B1FB2A661007A5B33 /* UIColor+Hex.m in Sources */,
 			);

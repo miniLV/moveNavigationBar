@@ -101,7 +101,7 @@ static CGFloat showViewH = 50;
 
     //2.导航条View
     UIView *navigationView = [[UIView alloc]init];
-    navigationView.backgroundColor = [UIColor orangeColor];
+//    navigationView.backgroundColor = [UIColor orangeColor];
     navigationView.frame = CGRectMake(0, toolBarH, ScreenW, navigationBarH);
     
     //2.1title

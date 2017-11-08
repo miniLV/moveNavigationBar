@@ -14,8 +14,9 @@
 #import "ChildrenOneViewController.h"
 #import "ChildrenTwoViewController.h"
 #import "ChildrenThreeViewController.h"
+#import "ComplexRootViewController.h"
 
-@interface ComplexViewController ()
+@interface ComplexViewController ()<NavigationViewDelegate>
 
 @property (nonatomic, strong)NSMutableArray *titleBtnsArrrayM;
 
@@ -63,8 +64,25 @@
     [self clickTitleBtn:_titleBtnsArrrayM[0]];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:YES];
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    
+    [super viewWillDisappear:animated];
+    
+    [self.navigationController setNavigationBarHidden:NO];
+}
+
+
 - (void)setBaseSetting{
     
+    self.title = @"test title";
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
@@ -96,7 +114,7 @@
     
     //6.内容scrollView
     UIScrollView *scrollView = [self createContentScrollView];
-    scrollView.backgroundColor = [UIColor whiteColor];
+    scrollView.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:scrollView];
     _contentScrollView = scrollView;
 }
@@ -245,13 +263,15 @@
     
     ChildrenOneViewController *oneVC = [[ChildrenOneViewController alloc]init];
     [self addChildViewController:oneVC];
+    oneVC.delegate = self;
     
     ChildrenTwoViewController *twoVC = [[ChildrenTwoViewController alloc]init];
     [self addChildViewController:twoVC];
+    twoVC.delegate = self;
     
     ChildrenThreeViewController *threeVC = [[ChildrenThreeViewController alloc]init];
     [self addChildViewController:threeVC];
-    
+    twoVC.delegate = self;
     
     
 }
@@ -317,6 +337,54 @@
 
 
 #pragma mark - private Delegate
+-(void)changeNavigationViewShow:(BOOL)hidden{
+    
+    if (hidden) {
+        //导航条隐藏
+        
+//        if (_navigationView.hidden) return;
+        
+        [UIView animateWithDuration:0.25 animations:^{
+            
+            _navigationView.hidden = YES;
+            
+            //按钮View上移
+            CGRect tempShowViewFrame =  _topBtnsView.frame;
+            tempShowViewFrame.origin.y -= navigationBarH;
+            _topBtnsView.frame = tempShowViewFrame;
+            
+            //修改scrollview
+            CGRect tempScrollViewFrame = _contentScrollView.frame;
+            tempScrollViewFrame.origin.y -= navigationBarH;
+            tempScrollViewFrame.size.height += navigationBarH;
+            _contentScrollView.frame = tempScrollViewFrame;
+        }];
+        
+        
+        
+    }
+    else{
+        
+//        if (_navigationView.hidden == NO) return;
+        
+        [UIView animateWithDuration:0.25 animations:^{
+            _navigationView.hidden = NO;
+            
+            CGRect tempShowViewFrame =  _topBtnsView.frame;
+            tempShowViewFrame.origin.y += navigationBarH;
+            _topBtnsView.frame = tempShowViewFrame;
+            
+            //修改scrollview
+            CGRect tempScrollViewFrame = _contentScrollView.frame;
+            tempScrollViewFrame.origin.y += navigationBarH;
+            tempScrollViewFrame.size.height -= navigationBarH;
+            _contentScrollView.frame = tempScrollViewFrame;
+            
+        }];
+        
+    }
+}
+
 - (void)clickPinkViewArrowBtn{
     
     MNLog(@"HZClickPinkViewArrowBtn")

@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol NavigationViewDelegate <NSObject>
+
+- (void)changeNavigationViewShow:(BOOL)hidden;
+
+@end
+
 typedef enum orderType:NSInteger{
     TypeOne = 0,
     TypeTwo = 1,
@@ -16,5 +22,7 @@ typedef enum orderType:NSInteger{
 }showType;
 
 @interface ComplexRootViewController : UIViewController
+
+@property (nonatomic, weak) id<NavigationViewDelegate> delegate;
 
 @end

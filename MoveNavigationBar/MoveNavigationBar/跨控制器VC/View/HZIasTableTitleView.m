@@ -8,8 +8,6 @@
 
 #import "HZIasTableTitleView.h"
 #import <Masonry.h>
-#import "NSAttributedString+HZsetColor.h"
-
 @implementation HZIasTableTitleView
 
 
@@ -36,10 +34,7 @@
     UILabel *contentLabel = [[UILabel alloc]init];
     contentLabel.textColor = HZ_383838Color;
     contentLabel.font = HZ_10FontSize;
-
-    NSAttributedString *attr = [NSAttributedString getAnyDigitAttrNum:title attrDic:nil startIndex:2 withNum:num];
-    contentLabel.attributedText = attr;
-    
+    contentLabel.text = title;
     [titleView addSubview:contentLabel];
     
     [contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -48,7 +43,6 @@
         make.left.mas_equalTo(tipsIV.mas_right).mas_equalTo(5);
     }];
     
-
     return titleView;
 }
 
