@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum orderType:NSInteger{
+    TypeOne = 0,
+    TypeTwo = 1,
+    TypeThree = 2,
+
+}showType;
+
 @interface ComplexRootViewController : UIViewController
 
 @end

@@ -14,6 +14,11 @@
 
 @implementation ChildrenOneViewController
 
+-(showType)type{
+    
+    return TypeOne;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

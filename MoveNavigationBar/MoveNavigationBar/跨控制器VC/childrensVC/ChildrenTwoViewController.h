@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ChildrenTwoViewController : UIViewController
+#import "ComplexRootViewController.h"
+@interface ChildrenTwoViewController : ComplexRootViewController
+
 
 @end

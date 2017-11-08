@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ChildrenOneViewController : UIViewController
+#import "ComplexRootViewController.h"
+@interface ChildrenOneViewController : ComplexRootViewController
 
 @end

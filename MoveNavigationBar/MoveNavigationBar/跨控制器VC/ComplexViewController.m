@@ -60,7 +60,7 @@
     [self addBtnChildrenControllers];
     
     //clickFirstBtn
-    //    [self clickTitleBtn:_titleBtnsArrrayM[0]];
+    [self clickTitleBtn:_titleBtnsArrrayM[0]];
 }
 
 - (void)setBaseSetting{

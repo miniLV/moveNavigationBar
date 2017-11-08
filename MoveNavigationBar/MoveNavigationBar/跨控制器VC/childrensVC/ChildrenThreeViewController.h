@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ChildrenThreeViewController : UIViewController
+#import "ComplexRootViewController.h"
+@interface ChildrenThreeViewController : ComplexRootViewController
 
 @end
